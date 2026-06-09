@@ -1,19 +1,27 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #161B22;
     color:#e6f3ef;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    margin: 0;
 }
 
-header{
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 2rem;
+}
+
+header {
     background-color: #090c0f;
-    margin: 0 auto;
-    padding: 0 2rem;
+    padding: 2rem 0;
 }
 
-footer{
+footer {
     background-color: #0D1117;
+    padding: 2rem 0;
 }
 
 h1,h2{
@@ -35,7 +43,6 @@ h1,h2{
 }
 
 .skill-card img{
-    color: #FF3850;
     width: 64px;
     height: 64px;
     margin-bottom: 8px;
