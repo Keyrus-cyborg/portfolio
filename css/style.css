@@ -14,6 +14,21 @@ body{
     text-shadow: 0 0 8px rgba(126,231,135,.4);
 }
 
+nav{
+    display: flex;
+    gap: 2rem;
+}
+
+nav a{
+    color: #e6f3ef;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:#7EE787;
+    text-shadow:0 0 8px rgba(126,231,135,.5);
+}
+
 .container{
     max-width:1200px;
     margin:0 auto;
@@ -25,9 +40,35 @@ header {
     padding: 2rem 0;
 }
 
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 footer {
     background-color: #0D1117;
     padding: 2rem 0;
+}
+
+footer img{
+    width: 32px;
+    height: 32px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-me p{
+    max-width: 900px;
+}
+
+#contact-icons{
+    display: flex;
+    gap: 1rem;
 }
 
 h1,h2{
