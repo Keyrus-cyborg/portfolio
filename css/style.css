@@ -1,38 +1,38 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: #161B22;
-    color:#e6f3ef;
+    color: #e6f3ef;
     margin: 0;
 }
 
-.logo{
+.logo {
     font-family: 'Orbitron', sans-serif;
-    color:#7EE787;
-    text-shadow: 0 0 8px rgba(126,231,135,.4);
+    color: #7EE787;
+    text-shadow: 0 0 8px rgba(126, 231, 135, .4);
 }
 
-nav{
+nav {
     display: flex;
     gap: 2rem;
 }
 
-nav a{
+nav a {
     color: #e6f3ef;
     text-decoration: none;
 }
 
-nav a:hover{
-    color:#7EE787;
-    text-shadow:0 0 8px rgba(126,231,135,.5);
+nav a:hover {
+    color: #7EE787;
+    text-shadow: 0 0 8px rgba(126, 231, 135, .5);
 }
 
-.container{
-    max-width:1200px;
-    margin:0 auto;
-    padding:0 2rem;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 header {
@@ -40,7 +40,7 @@ header {
     padding: 2rem 0;
 }
 
-.header-top{
+.header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,37 +51,38 @@ footer {
     padding: 2rem 0;
 }
 
-footer img{
+footer img {
     width: 32px;
     height: 32px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#about-me p{
+#about-me p {
     max-width: 900px;
 }
 
-#contact-icons{
+#contact-icons {
     display: flex;
     gap: 1rem;
 }
 
-h1,h2{
-    color:#7EE787;
+h1,
+h2 {
+    color: #7EE787;
 }
 
-.skills-grid{
+.skills-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.skill-card{
+.skill-card {
     width: 120px;
     display: flex;
     flex-direction: column;
@@ -89,8 +90,38 @@ h1,h2{
     text-align: center;
 }
 
-.skill-card img{
+.skill-card img {
     width: 64px;
     height: 64px;
     margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    #about-me p {
+        max-width: 100%;
+    }
 }
