@@ -52,6 +52,7 @@ footer {
 }
 
 footer img {
+    transition: 0.3s;
     width: 32px;
     height: 32px;
 }
@@ -69,6 +70,14 @@ footer img {
 #contact-icons {
     display: flex;
     gap: 1rem;
+}
+
+#contact-icons a img {
+    transition: filter 0.3s ease;
+}
+
+#contact-icons a img:hover {
+    filter: brightness(0) saturate(100%) invert(78%) sepia(47%) saturate(456%) hue-rotate(83deg) brightness(96%) contrast(89%) drop-shadow(0 0 8px rgba(126, 231, 135, 0.5));
 }
 
 h1,
